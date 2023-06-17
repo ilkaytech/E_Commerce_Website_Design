@@ -33,6 +33,7 @@ h6 {
 /* header start */
 header {
   border-bottom: 1px solid #dee0ea;
+  position: relative;
 }
 .global-notification {
   background-color: #1367ef;
@@ -56,10 +57,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.header-left .logo {
-  font-size: 24px;
-  font-weight: 500;
-  display: flex;
+#logo img {
+  width: 160px;
+  height: 60px;
 }
 .header-wrapper .navigation .menu-list {
   display: flex;
@@ -165,4 +165,43 @@ header .menu-dropdown-content a:hover {
   opacity: 1;
   visibility: visible;
 }
+.menu-dropdown-megamenu {
+  background-color: #fff;
+  border: 1px solid #dee0ea;
+  padding: 22px;
+  display: flex;
+  column-gap: 50px;
+}
+.megamenu-wrapper .menu-dropdown-wrapper {
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.megamenu-wrapper {
+  position: static !important;
+}
+.megamenu-wrapper .megamenu-links {
+  display: flex;
+  column-gap: 50px;
+}
+.megamenu-wrapper .megamenu-products-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.megamenu-wrapper .megamenu-menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  row-gap: 2px;
+}
+.megamenu-wrapper .megamenu-menu-list a {
+  font-size: 14px;
+}
+.megamenu-wrapper .megamenu-single-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+/* ? menu dropdown end */
 /* header end */
