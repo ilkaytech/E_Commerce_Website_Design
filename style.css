@@ -30,7 +30,6 @@ h6 {
   margin: 0 auto;
 }
 button {
-  margin-top: 20px;
   cursor: pointer;
   border: none;
 }
@@ -261,3 +260,10 @@ header .menu-dropdown-content a:hover {
 
 /* ? menu dropdown end */
 /* header end */
+/* ! modal search start */
+.modal-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* ! modal search end */
