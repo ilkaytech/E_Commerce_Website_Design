@@ -80,7 +80,6 @@ input[type="number"]::-webkit-inner-spin-button {
 header {
   border-bottom: 1px solid #dee0ea;
   position: relative;
-  height: 200vh;
 }
 .global-notification {
   background-color: #1367ef;
@@ -456,8 +455,15 @@ header .menu-dropdown-content a:hover {
     font-size: 16px !important;
   }
 }
-/* ! end header responsive */
+/* ! header responsive end */
+/*! search responsive start */
+@media (max-width: 992px) {
+  .modal-search .modal-wrapper {
+    max-width: 370px;
+  }
+  .modal-search .results {
+    grid-template-columns: 1fr;
+  }
+}
 
-/*! search responsive */
-
-/*! end search responsive */
+/*! search responsive end */
