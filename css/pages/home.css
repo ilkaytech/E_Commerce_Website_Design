@@ -17,3 +17,10 @@
   flex-wrap: wrap;
 }
 /* ! categories end */
+
+/* ! products start */
+.products .product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* ! products end */
