@@ -19,6 +19,10 @@
 /* ! categories end */
 
 /* ! products start */
+.products {
+  margin-bottom: 40px;
+}
+
 .products .product-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
