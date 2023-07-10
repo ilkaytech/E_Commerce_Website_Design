@@ -17,12 +17,16 @@
   z-index: -1;
 }
 .slider-item .slider-title {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 500;
 }
 .slider-item .slider-heading {
   font-size: 60px;
   font-weight: 600;
+}
+.slider-item a {
+  position: relative;
+  z-index: 1;
 }
 .slider .slider-buttons {
   position: absolute;
