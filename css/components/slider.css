@@ -68,6 +68,10 @@
   border: none;
   display: flex;
   opacity: 0.4;
+  transition: 0.2s ease opacity;
+}
+.slider .slider-dots .slider-dot:hover {
+  opacity: 1;
 }
 .slider .slider-dots .slider-dot span {
   width: 12px;
@@ -75,4 +79,12 @@
   background-color: #1367ef;
   display: inline-block;
   border-radius: 100%;
+}
+@media (max-width: 768px) {
+  .slider-item {
+    height: calc(100vh - 155px);
+  }
+  .slider-buttons {
+    display: none !important;
+  }
 }
