@@ -28,6 +28,9 @@
   font-size: 14px;
   border-bottom: 1px solid;
   padding-bottom: 4px;
+  margin-top: 10px;
+  display: inline-block;
+  transition: 0.2s ease color;
 }
 .blog-item .blog-info-bottom a:hover {
   color: #1367ef;

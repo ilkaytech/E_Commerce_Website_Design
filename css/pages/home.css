@@ -50,3 +50,11 @@
   gap: 30px;
 }
 /* ! blogs end */
+
+/* ! responsive */
+
+@media (max-width: 768px) {
+  .blogs .blog-list {
+    grid-template-columns: 1fr;
+  }
+}
