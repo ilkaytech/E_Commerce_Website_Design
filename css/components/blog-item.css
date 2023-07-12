@@ -1,0 +1,10 @@
+.blog-list {
+  text-align: center;
+  list-style-type: none;
+}
+.blog-list .blog-image img {
+  width: 100%;
+}
+.blog-item .blog-info-top {
+  font-size: 14px;
+}
