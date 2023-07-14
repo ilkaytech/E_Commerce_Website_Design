@@ -32,6 +32,26 @@
   align-items: flex-start;
   font-size: 12px;
 }
+.account-column form .required {
+  color: #e51414;
+  font-weight: bold;
+}
+.account-column form .remember label {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
 .account-column form .remember button {
   margin-top: 10px;
+}
+.account-column form .form-link {
+  color: #1367ef;
+  font-size: 14px;
+}
+
+/* !responsive */
+@media (max-width: 768px) {
+  .account-wrapper {
+    flex-direction: column;
+  }
 }
