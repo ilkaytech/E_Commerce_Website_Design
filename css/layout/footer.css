@@ -1,3 +1,4 @@
+/* ! subscribe start */
 .footer .subscribe-row {
   background-color: #000;
   color: white;
@@ -53,6 +54,44 @@
   align-items: center;
   column-gap: 10px;
 }
+/* ! subscribe end */
+
+/* ! witgets start */
+.widgets-row {
+  padding: 60px 0;
+  border-bottom: 1px solid;
+}
+.widgets-row .footer-widgets {
+  display: flex;
+  justify-content: space-evenly;
+}
+.widgets-row .footer-widgets > div {
+  flex: 1;
+}
+.widgets-row .footer-widgets > .brand-info {
+  flex: 3;
+}
+.widgets-row .brand-info .footer-desc {
+  width: 400px;
+  font-size: 14px;
+  margin: 15px 0px;
+}
+.widgets-row .brand-info .footer-contact {
+  font-size: 14px;
+}
+.footer-widgets .widget-nav-menu h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.footer-widgets .widget-nav-menu ul {
+  margin-top: 20px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  list-style: none;
+}
+/* ! witgets end */
 
 /* ! responsive */
 
