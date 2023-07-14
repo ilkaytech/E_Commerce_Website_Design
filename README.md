@@ -43,6 +43,7 @@ E-Commerce Website Design (folder)
 <br>
 
 ![e-commerce website](./yokyok.gif)
+![e-commerce website](./yokyoktech.png)
 
 ### The following issues are covered in the project;
 
