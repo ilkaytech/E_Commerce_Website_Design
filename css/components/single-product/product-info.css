@@ -106,7 +106,52 @@
 }
 .site-main .values .values-list {
   display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .site-main .values .values-list span {
   padding: 8px 40px;
+  border: 1px solid #dee0ea;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease all;
+}
+.site-main .values .values-list span.active {
+  background-color: #e51414;
+  color: #fff;
+}
+.site-main .values .values-list span:hover {
+  background-color: #e51414;
+  color: #fff;
+}
+.site-main .cart-button {
+  display: flex;
+  column-gap: 10px;
+}
+.site-main .cart-button input {
+  width: 80px;
+}
+.site-main .cart-button button {
+  width: 100%;
+}
+.site-main .product-extra-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.site-main .product-extra-buttons a {
+  font-size: 12px;
+  color: gray;
+}
+.site-main .divider {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dee0ea;
+}
+.site-main .product-meta {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  margin-top: 20px;
+  font-size: 13px;
 }
