@@ -201,6 +201,7 @@ header .menu-dropdown-content a:hover {
     background-color: #fff;
     border-right: 1px solid #dee0ea;
     z-index: 2;
+    transition: 0.5s ease all;
   }
   .header-center .bi-x-circle {
     display: inline-block;
