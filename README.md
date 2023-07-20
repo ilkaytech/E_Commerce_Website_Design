@@ -30,6 +30,7 @@ E-Commerce Website Design (folder)
         |----img (folder)                        # Images of the project
     |----index.html
     |----shop.html
+    |----cart.html
     |----blog.html
     |----contact.html
     |----account.html
