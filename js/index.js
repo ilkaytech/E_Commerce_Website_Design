@@ -21,7 +21,7 @@ document.addEventListener("click", function (event) {
 /* click outside end */
 
 // ! home slidebar end
-
+// ?----------------------------
 // ! search modal start
 const btnOpenSearch = document.querySelector(".search-button");
 const btnCloseSearch = document.getElementById("close-search");
@@ -49,3 +49,28 @@ document.addEventListener("click", function (e) {
 });
 /* click outside end */
 // ! search modal end
+// ?----------------------------
+// ! slider start
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlide(n) {
+  showSlides((slideIndex += n));
+}
+
+function showSlides(n) {
+  const slides = document.getElementsByClassName("slider-item");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "flex";
+}
+// ! slider end
