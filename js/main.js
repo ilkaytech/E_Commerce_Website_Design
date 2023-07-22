@@ -1,6 +1,5 @@
 import headerFunc from "./header.js";
-// import sliderFunc from "./slider.js";
-import productsFunc from "./product.js";
+import productsFunc from "./products.js";
 // ?----------------------------
 // ! slider start
 let slideIndex = 1;
