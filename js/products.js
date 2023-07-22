@@ -1,9 +1,7 @@
 import { products1 } from "./glide.js";
 
-let products = [];
-
-async function productsFunc() {
-  products = (await localStorage.getItem("products"))
+function productsFunc() {
+  const products = localStorage.getItem("products")
     ? JSON.parse(localStorage.getItem("products"))
     : [];
   const productsContainer = document.getElementById("product-list");
@@ -19,7 +17,7 @@ async function productsFunc() {
                   </a>
                 </div>
                 <div class="product-info">
-                  <a href="$" class="product-title">Analogue Resin Strap</a>
+                  <a href="$" class="product-title">${item.name}</a>
                   <ul class="product-star">
                     <li>
                       <i class="bi bi-star-fill"></i>
@@ -38,10 +36,14 @@ async function productsFunc() {
                     </li>
                   </ul>
                   <div class="product-prices">
-                    <strong class="new-price">$${item.price.newPrice}</strong>
-                    <span class="old-price">$${item.price.oldPrice}</span>
+                    <strong class="new-price">$${item.price.newPrice.toFixed(
+                      2
+                    )}</strong>
+                    <span class="old-price">$${item.price.oldPrice.toFixed(
+                      2
+                    )}</span>
                   </div>
-                  <span class="product-discount">-17%</span>
+                  <span class="product-discount">-${item.discount}%</span>
                   <div class="product-links">
                     <button>
                       <i class="bi bi-basket-fill"></i>
