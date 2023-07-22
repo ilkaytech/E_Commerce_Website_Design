@@ -86,3 +86,6 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 // ! slider end
+
+// ! localStorage
+localStorage.setItem("fullName", JSON.stringify("İlkay Öztürk"));
