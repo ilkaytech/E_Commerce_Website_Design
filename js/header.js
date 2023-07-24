@@ -1,5 +1,5 @@
 function sidebarFunc() {
-  // ! home slidebar start
+  //! home sidebar start
   const btnOpenSidebar = document.querySelector("#btn-menu");
   const sidebar = document.querySelector("#sidebar");
   const btnCloseSidebar = document.querySelector("#close-sidebar");
@@ -10,6 +10,7 @@ function sidebarFunc() {
   btnCloseSidebar.addEventListener("click", function () {
     sidebar.style.left = "-100%";
   });
+
   /* click outside start */
   document.addEventListener("click", function (event) {
     if (
@@ -21,11 +22,11 @@ function sidebarFunc() {
   });
   /* click outside end */
 
-  // ! home slidebar end
+  //! home sidebar end
 }
 
 function searchModalFunc() {
-  // ! search modal start
+  //! search modal start
   const btnOpenSearch = document.querySelector(".search-button");
   const btnCloseSearch = document.getElementById("close-search");
   const modalSearch = document.getElementsByClassName("modal-search");
@@ -40,6 +41,7 @@ function searchModalFunc() {
     modalSearch[0].style.visibility = "hidden";
     modalSearch[0].style.opacity = "0";
   });
+
   /* click outside start */
   document.addEventListener("click", function (e) {
     if (
@@ -50,8 +52,10 @@ function searchModalFunc() {
       modalSearch[0].style.opacity = "0";
     }
   });
+
   /* click outside end */
-  // ! search modal end
+
+  //! search modal end
 }
 
 function headerFunc() {

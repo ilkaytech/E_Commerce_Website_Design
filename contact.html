@@ -2,17 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <!--! Boostrap Icons CDN -->
+    <!--! Boostrap Icons CDN  -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
-    <!--! header start -->
+    <!--! header start  -->
     <header>
       <div class="global-notification">
         <div class="container">
@@ -27,12 +29,14 @@
         <div class="container">
           <div class="header-wrapper">
             <div class="header-mobile">
-              <i class="bi bi-list"></i>
+              <i class="bi bi-list" id="btn-menu"></i>
             </div>
-            <div class="header-lef">
-              <a href="#" id="logo"><img src="./img/logo.png" alt="" /></a>
+            <div class="header-left">
+              <a href="index.html" class="logo"
+                ><img src="./img/logo.png" alt=""
+              /></a>
             </div>
-            <div class="header-center">
+            <div class="header-center" id="sidebar">
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
@@ -84,7 +88,7 @@
                             <h3 class="megamenu-products-title">Shop Style</h3>
                             <ul class="megamenu-menu-list">
                               <li>
-                                <a href="#">Shop Standart</a>
+                                <a href="#">Shop Standard</a>
                               </li>
                               <li>
                                 <a href="#">Shop Full</a>
@@ -93,7 +97,7 @@
                                 <a href="#">Shop Only Categories</a>
                               </li>
                               <li>
-                                <a href="#">Shop İmage Categories</a>
+                                <a href="#">Shop Image Categories</a>
                               </li>
                               <li>
                                 <a href="#">Shop Sub Categories</a>
@@ -157,7 +161,7 @@
                         </div>
                         <div class="megamenu-single">
                           <a href="#">
-                            <img src="/img/mega-menu.jpg" alt="" />
+                            <img src="img/mega-menu.jpg" alt="" />
                           </a>
                           <h3 class="megamenu-single-title">
                             JOIN THE LAYERING GANG
@@ -182,21 +186,21 @@
                   </li>
                 </ul>
               </nav>
-              <i class="bi-x-circle"></i>
+              <i class="bi-x-circle" id="close-sidebar"></i>
             </div>
             <div class="header-right">
               <div class="header-right-links">
                 <a href="account.html" class="header-account">
                   <i class="bi bi-person"></i>
                 </a>
-                <button class="toggle-button">
+                <button class="search-button">
                   <i class="bi bi-search"></i>
                 </button>
                 <a href="#">
                   <i class="bi bi-heart"></i>
                 </a>
                 <div class="header-cart">
-                  <a href="#" class="header-cart-link">
+                  <a href="cart.html" class="header-cart-link">
                     <i class="bi bi-bag"></i>
                     <span class="header-cart-count">0</span>
                   </a>
@@ -207,9 +211,9 @@
         </div>
       </div>
     </header>
-    <!--! header end -->
+    <!--! header end  -->
 
-    <!--! modal search start -->
+    <!--! modal search start  -->
     <div class="modal-search">
       <div class="modal-wrapper">
         <h3 class="modal-title">Search for products</h3>
@@ -217,7 +221,7 @@
           Start typing to see products you are looking for.
         </p>
         <form class="search-form">
-          <input type="text" placeholder="Search a products" />
+          <input type="text" placeholder="Search a product" />
           <button>
             <i class="bi bi-search"></i>
           </button>
@@ -229,41 +233,73 @@
           <div class="results">
             <a href="#" class="result-item">
               <img
-                src="./img/products/product1/1.png"
+                src="img/products/product1/1.png"
                 class="search-thumb"
                 alt=""
               />
               <div class="search-info">
-                <h4>Analoque Resin Strap</h4>
+                <h4>Analogue Resin Strap</h4>
                 <span class="search-sku">SKU: PD0016</span>
                 <span class="search-price">$108.00</span>
               </div>
             </a>
             <a href="#" class="result-item">
               <img
-                src="./img/products/product2/1.png"
+                src="img/products/product2/1.png"
                 class="search-thumb"
                 alt=""
               />
               <div class="search-info">
-                <h4>Analoque Resin Strap</h4>
+                <h4>Analogue Resin Strap</h4>
                 <span class="search-sku">SKU: PD0016</span>
                 <span class="search-price">$108.00</span>
               </div>
             </a>
           </div>
         </div>
-        <i class="bi bi-x-circle"></i>
+        <i class="bi bi-x-circle" id="close-search"></i>
       </div>
     </div>
-    <!--! modal search end -->
+    <!--! modal search end  -->
 
-    <!-- ! contact start -->
+    <!--! modal dialog start  -->
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button class="modal-close">
+          <i class="bi bi-x"></i>
+        </button>
+        <div class="modal-image">
+          <img src="img/modal-dialog.jpg" alt="" />
+        </div>
+        <div class="popup-wrapper">
+          <div class="popup-content">
+            <div class="popup-title">
+              <h3>NEWSLETTER</h3>
+            </div>
+            <p class="popup-text">
+              Sign up to our newsletter and get exclusive deals you won find any
+              where else straight to your inbox!
+            </p>
+            <form class="popup-form">
+              <input type="text" placeholder="Enter Email Address Here" />
+              <button class="btn btn-primary">SUBSCRIBE</button>
+              <label>
+                <input type="checkbox" />
+                <span>Don't show this popup again</span>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! modal dialog end  -->
+
+    <!--! contact start  -->
     <section class="contact">
       <div class="contact-top">
         <div class="contact-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12238.32356283321!2d32.82586570780151!3d39.928394399203164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f190a9cea8f%3A0xd3862ea8248d08a0!2sAn%C4%B1tkabir!5e0!3m2!1str!2str!4v1689348682688!5m2!1str!2str"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6119.042864956115!2d32.832136176637555!3d39.92972471769858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f190a9cea8f%3A0xd3862ea8248d08a0!2sAn%C4%B1tkabir!5e0!3m2!1str!2str!4v1690189084475!5m2!1str!2str"
             width="100%"
             height="500"
             style="border: 0"
@@ -279,9 +315,10 @@
             <h4>Contact with us</h4>
             <h2>Get In Touch</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
-              veritatis facere tempora deserunt quo tenetur ab iure corporis
-              ipsum dolorum?
+              In hac habitasse platea dictumst. Pellentesque viverra sem nec
+              orci lacinia, in bibendum urna mollis. Quisque nunc lacus, varius
+              vel leo a, pretium lobortis metus. Vivamus consectetur consequat
+              justo.
             </p>
           </div>
           <div class="contact-elements">
@@ -295,7 +332,7 @@
               </div>
               <div class="">
                 <label>
-                  Your Email
+                  Your email
                   <span>*</span>
                 </label>
                 <input type="text" required />
@@ -309,14 +346,14 @@
               </div>
               <div class="">
                 <label>
-                  Your Message
+                  Your message
                   <span>*</span>
                 </label>
                 <textarea
                   id="author"
                   name="author"
                   type="text"
-                  vlue=""
+                  value=""
                   size="30"
                   required=""
                 ></textarea>
@@ -326,24 +363,23 @@
             <div class="contact-info">
               <div class="contact-info-item">
                 <div class="contact-info-texts">
-                  <strong>Clotya Store</strong>
+                  <strong> Clotya Store</strong>
                   <p class="contact-street">
-                    Turkey - Yücetepe, Akdeniz Cd. No:31, Çankaya/ANKARA 06570
+                    Anitkabir Turkey — Yücetepe Akdeniz Cd. 06570, No:31 Çankaya
+                    / Ankara, Tr 06570
                   </p>
-                  <a href="tel:Phone: +90 538 779 60 48"
+                  <a href="tel:Phone: +1 1234 567 88"
                     >Phone: +90 538 779 60 48</a
                   >
-                  <a href="mailto:Email:info@yokyoktech"
-                    >Email: info@yokyoktech</a
+                  <a href="mailto:Email: info@yokyoktech.com"
+                    >Email: info@yokyoktech.com</a
                   >
                 </div>
               </div>
               <div class="contact-info-item">
                 <div class="contact-info-texts">
-                  <strong>Opaning Hourse</strong>
-                  <p class="contact-date">
-                    Monday - Friday : 09:00am - 17:00pm
-                  </p>
+                  <strong> Opening Hours</strong>
+                  <p class="contact-date">Monday - Friday : 9am - 5pm</p>
                   <p>Weekend Closed</p>
                 </div>
               </div>
@@ -352,9 +388,9 @@
         </div>
       </div>
     </section>
-    <!-- ! contact end -->
+    <!--! contact end  -->
 
-    <!-- ! policy start -->
+    <!--! policy start  -->
     <section class="policy">
       <div class="container">
         <ul class="policy-list">
@@ -375,24 +411,24 @@
           <li class="policy-item">
             <i class="bi bi-arrow-clockwise"></i>
             <div class="policy-texts">
-              <strong>30 DAYS RETURN</strong>
+              <strong> 30 DAYS RETURN</strong>
               <span>Simply return it within 30 days</span>
             </div>
           </li>
           <li class="policy-item">
             <i class="bi bi-credit-card"></i>
             <div class="policy-texts">
-              <strong>PAYMENT METHOD</strong>
+              <strong> PAYMENT METHOD</strong>
               <span>Secure Payment</span>
             </div>
           </li>
         </ul>
       </div>
     </section>
-    <!-- ! policy end -->
+    <!--! policy end  -->
 
-    <!-- ! footer start-->
-    <section class="footer">
+    <!--! footer start  -->
+    <footer class="footer">
       <div class="subscribe-row">
         <div class="container">
           <div class="footer-row-wrapper">
@@ -400,7 +436,7 @@
               <div class="footer-subscribe">
                 <div class="footer-subscribe-top">
                   <h3 class="subscribe-title">
-                    Get our emails for info on wev items, sales and more.
+                    Get our emails for info on new items, sales and more.
                   </h3>
                   <p class="subscribe-desc">
                     We'll email you a voucher worth $10 off your first order
@@ -413,12 +449,12 @@
                       type="text"
                       placeholder="Enter your email address."
                     />
-                    <button class="btn btn">Subscribe</button>
+                    <button class="btn">Subscribe</button>
                   </form>
                   <p class="privacy-text">
                     By subscribing you agree to our
                     <a href="#"
-                      >Terms & Conditions and Privacy & Cookies Policy</a
+                      >Terms & Conditions and Privacy & Cookies Policy.</a
                     >
                   </p>
                 </div>
@@ -430,21 +466,19 @@
                   Need help? <br />
                   (+90) 538 779 60 48
                 </h3>
-                <p class="contact-desc">We are available 09:00am - 17:00pm</p>
+                <p class="contact-desc">We are available 9:00am – 7:00pm</p>
               </div>
               <div class="footer-contact-bottom">
                 <div class="download-app">
-                  <a
-                    href="https://apps.apple.com/tr/developer/apple/id284417353?l=tr&mt=12"
-                  >
+                  <a href="#">
                     <img src="img/footer/app-store.png" alt="" />
                   </a>
-                  <a href="https://play.google.com/store/apps?hl=tr">
+                  <a href="#">
                     <img src="img/footer/google-play.png" alt="" />
                   </a>
                 </div>
                 <p class="privacy-text">
-                  <strong>Shopping App:</strong>Try our View in Your room
+                  <strong>Shopping App:</strong> Try our View in Your Room
                   feature, manage registries and save payment info.
                 </p>
               </div>
@@ -457,26 +491,25 @@
           <div class="footer-widgets">
             <div class="brand-info">
               <div class="footer-logo">
-                <a href="#" class="logo">
-                  <img src="img/logo.png" alt="" />
-                </a>
+                <a href="index.html" class="logo"
+                  ><img src="./img/logo.png" alt=""
+                /></a>
               </div>
               <div class="footer-desc">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Velit necessita2tibus voluptatibus culpa hic? Impedit
-                  voluptate libero sunt ab consequuntur odit.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis in termapol.
                 </p>
               </div>
               <div class="footer-contact">
                 <p>
-                  <a href="tel:538 779 60 48">(+90) 538 779 60 48</a
-                  ><a href="mailto:info@ilkaytech.com">info@ilkaytech.com</a>
+                  <a href="tel:538 779 60 48">(+90) 538 779 60 48</a> –
+                  <a href="mailto:info@example.com">info@yokyoktech.com</a>
                 </p>
               </div>
             </div>
             <div class="widget-nav-menu">
-              <h4>İnformation</h4>
+              <h4>Information</h4>
               <ul class="menu-list">
                 <li>
                   <a href="#">About Us</a>
@@ -551,7 +584,7 @@
                   <a href="#">Outerwear</a>
                 </li>
                 <li>
-                  <a href="#">Dropshipping</a>
+                  <a href="#">Shoes</a>
                 </li>
               </ul>
             </div>
@@ -562,9 +595,8 @@
         <div class="container">
           <div class="footer-copyright">
             <div class="site-copyright">
-              <p>Copyright 2023 © All right reserved. Powered by ilkaytech</p>
+              <p>Copyright 2023 © ilkaytech. All right reserved.</p>
             </div>
-
             <a href="#">
               <img src="img/footer/cards.png" alt="" />
             </a>
@@ -584,7 +616,10 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- ! footer end-->
+    </footer>
+    <!--! footer end  -->
+
+    <!-- javascript  -->
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>
