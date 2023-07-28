@@ -13,21 +13,53 @@ E-Commerce Website Design (folder)
 |----solution
         |----CSS (folder)
               |----components
-                    |----blog-item.css
-                    |----brand-item.css
-                    |----campaign-item.css
-                    |----campaign-single.css
-                    |----category-item.css
-                    |----modal-search.css
-                    |----product-item.css
-                    |----slider.css
+                  |----single-product
+                         |----breadcrumb.css
+                         |----product-gallery.css
+                         |----product-info.css
+                         |----product-tabs.css
+                  |----blog-item.css
+                  |----campaign-item.css
+                  |----campaign-single.css
+                  |----category-item.css
+                  |----modal-dialog.css
+                  |----modal-search.css
+                  |----product-item.css
+                  |----reviews.css
+                  |----slider.css
               |----layout (folder)
                     |----footer.css
                     |----header.css
               |----pages (folder)
-                    |----base.css
-                    |----main.css
+                    |----account.css
+                    |----blog.css
+                    |----cart.css
+                    |----contact.css
+                    |----home.css
+                    |----single-blog.css
+                    |----single-product.css
+                 |----base.css
+                 |----main.css
         |----img (folder)                        # Images of the project
+        |----Js (folder)
+                 |----singe-product
+                    |----colors.js
+                    |----comments.js
+                    |----tabs.js
+                    |----thumbsActive.js
+                    |----values.js
+                    |----zoom.js
+              |----cart.js
+              |----glide.js
+              |----header.js
+              |----main.js
+              |----product.js
+              |----search.js
+              |----single-product.js
+              |----slider.js
+
+
+
     |----index.html
     |----shop.html
     |----cart.html
