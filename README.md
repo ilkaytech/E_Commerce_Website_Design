@@ -50,6 +50,7 @@ E-Commerce Website Design (folder)
                     |----values.js
                     |----zoom.js
               |----cart.js
+              |----data.json
               |----glide.js
               |----header.js
               |----main.js
@@ -57,15 +58,14 @@ E-Commerce Website Design (folder)
               |----search.js
               |----single-product.js
               |----slider.js
-
-
-
     |----index.html
-    |----shop.html
-    |----cart.html
     |----blog.html
-    |----contact.html
     |----account.html
+    |----cart.html
+    |----contact.html
+    |----shop.html
+    |----single-blog.html
+    |----single-product.html
 
 ```
 
